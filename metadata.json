@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora Minimalista",
+  "description": "Uma calculadora web moderna e responsiva com design minimalista inspirado em smartphones e estéticas de anime, com pop-up elegante de planos ilimitados após cálculos e transições suaves.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

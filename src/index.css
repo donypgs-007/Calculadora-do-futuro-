@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Custom animations and variables for high elegance */
+  --animate-neon-pulse: neon-pulse 2s infinite alternate;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-grid-drift: grid-drift 20s linear infinite;
+
+  @keyframes neon-pulse {
+    0% {
+      text-shadow: 0 0 4px rgba(45, 212, 191, 0.4), 0 0 12px rgba(45, 212, 191, 0.2);
+    }
+    100% {
+      text-shadow: 0 0 8px rgba(45, 212, 191, 0.7), 0 0 20px rgba(45, 212, 191, 0.4);
+    }
+  }
+
+  @keyframes scanline {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes grid-drift {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+}
+
+/* Custom background grid styling to mimic elegant technological blueprint/anime UI */
+.anime-grid-bg {
+  background-image: 
+    linear-gradient(rgba(244, 63, 94, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 63, 94, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.anime-grid-fine {
+  background-image: 
+    linear-gradient(rgba(45, 212, 191, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.03) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+/* Custom button states with subtle clicks and light glows */
+.btn-calc-active {
+  transform: scale(0.95);
+  filter: brightness(1.2);
+}
+
+/* Glassmorphic elements */
+.glass-panel {
+  background: rgba(15, 15, 22, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
